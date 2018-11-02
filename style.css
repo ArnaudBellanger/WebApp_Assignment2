@@ -1,0 +1,164 @@
+/* Global */
+:root{
+  --main_bg_color: #29333C;
+  --darker_bg: #242d36;
+  --very_dark_bg: #1c232a;
+  --main_text_color: #bec1c4;
+  --bright_text_color: #e9eaeb;
+  --highlight_color:#199982;
+}
+
+body {
+  font: 15px/1.5 "Trebuchet MS", Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color: var( --main_bg_color);
+  color: var(--main_text_color);
+}
+
+#mainWrapper{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+header{
+  background:var(--darker_bg);
+  color:var(--bright_text_color);
+  padding-top:30px;
+  padding-left: 7%;
+  padding-right: 7%;
+  min-height:70px; 
+  border-bottom:var(--highlight_color) 5px groove;
+}
+
+/* #parameter  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-area: para;
+}
+
+#button1{
+  grid-area: but1;
+}
+
+#genderForm {
+  grid-area: gender;
+}
+
+#mainForm  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1rem 1rem 1rem;
+  grid-template-areas: 
+    "para para para"
+    "none but1 none"
+    "none gender none";
+} */
+
+
+
+
+
+
+
+/* Table */
+        
+table caption {
+  font-size: 1.5em;
+  margin: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 1px;
+  width: 70%;
+  border: 1px solid var(--highlight_color);
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  text-align: center;
+  border: 3px solid var(--highlight_color);
+  padding: 16px;
+}
+
+td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid var(--highlight_color);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--very_dark_bg)
+}
+
+table tr:hover {
+  font-weight: bold;
+  color: var(--bright_text_color)
+}
+
+
+
+
+
+
+
+/* CSS and html to display properly the more info from https://codepen.io/bradtraversy/pen/zEOrPp I made the javascript by myself since I chose a different approach */
+/* more info display */
+.modal{
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top:0;
+    height: 100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+.modal-content{
+    background-color:var(--main_bg_color);
+    margin: 20% auto;
+    width:70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-duration:1s;
+  }
+  
+.modal-header h2, .modal-footer h3{
+    margin:0;
+  }
+  .modal-header{
+    background:var(--darker_bg);
+    padding:15px;
+    color:var(--bright_text_color);
+  }
+  
+  .modal-body{
+    padding:10px 20px;
+    overflow: auto;
+
+  }
+
+  
+  .modal-footer{
+    background:var(--darker_bg);
+    padding:10px;
+    color:var(--bright_text_color);
+    text-align: center;
+  }
+  
+  .closeBtn{
+    color:var(--highlight_color);
+    float: right;
+    font-size:30px;
+    color:var(--highlight_color);
+  }
+
+  .closeBtn:hover,.closeBtn:focus{
+    color:#fff;
+    text-decoration: none;
+    cursor:pointer;
+  }

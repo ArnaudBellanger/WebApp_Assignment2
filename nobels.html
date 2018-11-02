@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Nobel prize laureates</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  
+</head>
+<body>
+  
+    <header>
+      <h1 id="mainTitle">Nobel prize laureates</h1>
+      <div id="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad excepturi inventore adipisci ipsa neque exercitationem soluta, deserunt velit consectetur. Veritatis corporis voluptatum voluptatem incidunt nemo minus maxime itaque neque porro.</div>
+    </header>
+    <div id="mainWrapper">
+    
+    <div id="mainForm">
+      <form id="parameter" >
+        <p>
+          <label>start date</label>
+          <input type="number" name="startDate" id="startDate" value="1901" >
+        </p>
+        <p>
+          <label>End date</label>
+          <input type="number" name="endDate" id="endDate" value="2018" >
+        </p>
+        <p>
+          <label>category</label>
+          <select name="category" id="category">
+            <option value="">   </option>
+          </select>
+        </p>
+        <p>
+          <label>Country</label>
+          <input class="autocomplete" id="idCountry" type="text" name="Country" placeholder="Country" list="countries">
+          <datalist id="countries">
+          </datalist>
+        </p>
+      </form>
+
+      <button id="button1" onclick="indexData(myData)">Submit</button>
+
+      <div id="genderForm"></div>
+      
+    </div>
+    
+    
+    <div id="genderForm"></div>
+    
+    
+    
+    <div id="id01"></div>
+    
+    
+  </div> <!-- mainWrapper -->
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
