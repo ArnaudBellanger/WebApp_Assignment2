@@ -132,7 +132,11 @@ function indexData(obj1){
         };
     };
     nobelSelected += "</table>";
+
+    // display the table
     document.getElementById("id01").innerHTML = nobelSelected;
+
+    // display the form to display which gender
     var genderForm = "<form class=\"gender\"><input type=\"radio\" name=\"gender\" onclick=\"displayOnly(\'male\')\"><span>female</span><input type=\"radio\" name=\"gender\" onclick=\"displayOnly(\'female\')\" ><span>male</span><input type=\"radio\" name=\"gender\" onclick=\"displayOnly(\'both\')\"><span>both</span></form>";
 
     document.getElementById("genderForm").innerHTML = genderForm;
@@ -170,12 +174,9 @@ function giveMoreInfo(ID){
 
 
 function findID (ID){
-    console.log("findID 1")
     var obj = myData.laureates;
     for (var i=0; i < obj.length; i++){
-        console.log("findID for loop")
         if (ID == obj[i].id){
-            console.log("findID if statement")
             giveMoreInfo(i);
             break;
         }
