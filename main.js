@@ -96,7 +96,7 @@ function getInputVal(id){
 function indexData(obj1){
     var obj = obj1.laureates;
     var parameter = getParameter();
-    var nobelSelected = "<table><caption>caption</caption><tr class=\"head\"><th>nane</th><th>Category</th><th>year awarded</th><th>more</th></tr>";
+    var nobelSelected = "<table><caption>caption</caption><tr class=\"head\"><th>Name</th><th>Category</th><th>year awarded</th><th>more</th></tr>";
     var category = parameter.category;
     var bornCountryCode = parameter.Country;
     var startDate = parameter.startDate;
